@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Alpha Radiation</title>
+  <link href='../ressources/css/style.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a href='../index.html' id='article-link' class='nav-link'>
+        <p class="nav-text">Home</p>
+      </a>
+      <a href='about.html' id='about-link' class='nav-link'>
+        <p class="nav-text">About</p>
+      </a>
+      <a href='contact.html' id='contact-link' class='nav-link'>
+        <p class="nav-text">Contact</p>
+      </a>
+    </nav>
+  </header>
+  <article>
+    <h1>Alpha Radiation</h1>
+    <div class="image-slider">
+      <div class="slides">
+        <img class="slide" src="../ressources/img/alpha_radiation.png"
+          alt="An alpha particle being ejected from the nucleus of an atom">
+        <img class="slide" src="../ressources/img/Three-Types-of-Ionizing-Radiation.jpg"
+          alt="The three types of ionizing radiation">
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094</button>
+      <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+    <div id="image-description"></div>
+    <br>
+    <p class="article-text">
+      Alpha radiation is an ionising form of radiation, carrying between 4 and 9 mega electron volts (MeV) with each
+      particle. An alpha particle is composed of 2 neutrons and 2 protons, resembling a helium nucleus that has been
+      stripped of its electrons. Alpha particles are created by being emitted from the nucleus of a heavy radioactive
+      element, such as uranium, radium and polonium, through a process called alpha decay. They are very energetic and
+      have a positive charge (+2).
+    </p>
+    <br>
+    <p class="article-text">
+      Alpha particles are highly ionising, but this also contributes to their weak penetration ability. They cannot even
+      pass through a sheet of paper or human skin, so it is not dangerous to humans, unless ingested. If alpha radiation
+      enters the human body, however, it causes usually significant internal damage and often death, even from very
+      small doses.
+    </p>
+    <br>
+    <p class="article-text">
+      In comparison, other forms of radiation such as gamma and beta radiation have greater penetration power, however
+      they are not quite as dangerous if ingested. Both gamma and beta radiation can pass through the skin into the
+      human body. Thick layers of lead, concrete or tungsten are needed to stop gamma rays.
+    </p>
+    <br>
+    <p class="article-text">
+      Alpha radiation is infamously difficult to detect once inside the body. Alpha particles, unlike gamma rays, can
+      not escape the body, meaning that conventional radiation monitoring techniques cannot detect internal alpha
+      contamination. This contributed to the delayed diagnosis in the case of Alexander Litvinenko, who was poisoned
+      using polonium-210, an alpha radiation emitter.
+    </p>
+  </article>
+  <div class="quiz">
+    <h2>Quiz</h2>
+    <div class="question">
+      <div>Why can an alpha particle be called a helium ion?</div>
+      <button class="button" id="button1" type="button" onclick="answerFunction('answer1')">See answer</button>
+      <br><br>
+      <p class="answer" id="answer1">When an atom loses or gains an electron, it becomes an ion. Alpha particles are
+        identical to a helium nucleus (a helium atom without its electrons).</p>
+    </div>
+    <div class="question">
+      <div>Why is alpha radiation the least and most dangerous type of radiation?</div>
+      <button class="button" id="button2" type="button" onclick=answerFunction("answer2")>See
+        answer</button>
+      <br><br>
+      <p class="answer" id="answer2">Alpha radiation is the most dangerous because it carries high energy, but it is the
+        least dangerous externally because it has difficulty reaching areas where that energy can cause harm.</p>
+    </div>
+    <div class="question">
+      <div>What type of shielding is required to protect against gamma radiation?</div>
+      <button class="button" id="button3" type="button" onclick=answerFunction("answer3")>See
+        answer</button>
+      <br><br>
+      <p class="answer" id="answer3">Thick layers of lead, concrete, or tungsten</p>
+    </div>
+  </div>
+  <script src="../ressources/js/main.js"></script>
+</body>
+
+</html>

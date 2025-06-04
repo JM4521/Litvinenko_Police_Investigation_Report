@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Alexander Litvinenko – His Life in Russia and the UK</title>
+  <link href='../ressources/css/style.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a href='../index.html' id='article-link' class='nav-link'>
+        <p class="nav-text">Home</p>
+      </a>
+      <a href='about.html' id='about-link' class='nav-link'>
+        <p class="nav-text">About</p>
+      </a>
+      <a href='contact.html' id='contact-link' class='nav-link'>
+        <p class="nav-text">Contact</p>
+      </a>
+    </nav>
+  </header>
+  <article>
+    <h1>Alexander Litvinenko – His Life in Russia and the UK</h1>
+    <div class="image-slider">
+      <div class="slides">
+        <img class="slide" src="../ressources/img/AlexanderLitvinenko.jpg" alt="Healthy Litvinenko in 2002">
+        <img class="slide" src="../ressources/img/AlexanderLitvinenkoPressConference.jpg"
+          alt="Alexander Litvinenko at the press conference in 1998, where he and several colleagues accused their superiors of ordering them to kill the Russian oligarch and politician Boris Berezovsky.">
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094</button>
+      <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+    <div id="image-description"></div>
+    <br>
+    <p class="article-text">Alexander Litvinenko was born on August 30th 1962 in Voronezh (Russia) and died in London on
+      November 23rd 2006. He was part of the KGB from 1986 until the collapse of the Soviet Union in 1991. After that,
+      he continued his career in the newly established FSB.
+    </p>
+    <br>
+    <p class="article-text">
+      In 1998, Litvinenko held a press conference with several of his colleagues for a television channel where they
+      accused senior FSB officials of ordering them to assassinate Russian business oligarch Boris Berezovsky and other
+      prominent Russian politicians and businesspeople. Out of all of his colleagues, he was the only person to reveal
+      his identity. Everyone else wore masks. He was dismissed from the FSB the same year and became a target of state
+      persecution, mostly because of this press conference. The press conference was never aired in its entirety.
+      In total, he spent twelve years working for the KGB and FSB.
+    </p>
+    <br>
+    <p class="article-text">
+      Two years later, he decided to leave for the United Kingdom together with his family to escape persecution in
+      Russia.
+      In the UK, he received political asylum and settled in London. In 2003, he began working as a journalist, writer
+      and
+      consultant for the British intelligence services.
+    </p>
+    <br>
+    <p class="article-text">
+      In London, Litvinenko wrote two books: <cite>Blowing Up Russia: Terror from Within</cite> and <cite>Lubyanka
+        Criminal
+        Group</cite>. In
+      <cite>Blowing Up Russia: Terror from Within</cite>, he accused the FSB of having staged the 1999 Russian apartment
+      bombings to
+      help bring Putin to power. In <cite>Lubyanka Criminal Group</cite>, he accused the authorities of engaging in
+      organised crime.
+      Both of these books significantly escalated tensions between him and the Russian government.
+    </p>
+  </article>
+  <div class="quiz">
+    <h2>Quiz</h2>
+    <div class="question">
+      <div>When did Litvinenko leave the FSB?</div>
+      <button class="button" id="button1" type="button" onclick="answerFunction('answer1')">See answer</button>
+      <br><br>
+      <p class="answer" id="answer1">He was dismissed from the FSB in 1998.</p>
+    </div>
+    <div class="question">
+      <div>What is the difference between the KGB and the FSB?</div>
+      <button class="button" id="button2" type="button" onclick=answerFunction("answer2")>See
+        answer</button>
+      <br><br>
+      <p class="answer" id="answer2">The KGB was the Soviet Union's Intelligence agency and the FSB is its Russian
+        successor.</p>
+    </div>
+    <div class="question">
+      <div>What were the main themes of the books authored by Litvinenko, and how did they affect his relationship with
+        the Kremlin?</div>
+      <button class="button" id="button3" type="button" onclick=answerFunction("answer3")>See
+        answer</button>
+      <br><br>
+      <p class="answer" id="answer3">Litvinenko’s books accused Russian authorities of staging terrorist attacks and
+        engaging in organized crime, which further worsened his conflict with the Kremlin.</p>
+    </div>
+  </div>
+  <script src="../ressources/js/main.js"></script>
+</body>
+
+</html>

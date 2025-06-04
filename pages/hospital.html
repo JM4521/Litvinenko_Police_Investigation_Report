@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>litvinenko case file</title>
+  <link href='../ressources/css/style.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a href='../index.html' id='article-link' class='nav-link'>
+        <p class="nav-text">Home</p>
+      </a>
+      <a href='about.html' id='about-link' class='nav-link'>
+        <p class="nav-text">About</p>
+      </a>
+      <a href='contact.html' id='contact-link' class='nav-link'>
+        <p class="nav-text">Contact</p>
+      </a>
+    </nav>
+  </header>
+  <article>
+    <h1>Litvinenko's time in hospital</h1>
+    <div class="image-slider">
+      <div class="slides">
+        <img class="slide" src="../ressources/img/AlexanderLitvinenkoHospital.jpg"
+          alt="Alexander Litvinenko in University College Hospital, London, on November 20, 2006.">
+        <img class="slide" src="../ressources/img/University_College_Hospital_New_Building.jpg"
+          alt="University College Hospital, where Litvinenko spend his final days.">
+        <img class="slide" src="../ressources/img/bone_marrow.jpg"
+          alt="A sample of Litvinenko's bone marrow tissue, stained for viewing under a microscope, showing tissue composed predominantly of fat cells with very few residual hematopoietic cells. This significant reduction is consistent with bone marrow aplasia.">
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094</button>
+      <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+    <div id="image-description"></div>
+    <br>
+    <p class="article-text">
+      On November 4th, Litvinenko was admitted to Barnet General Hospital in north London. He used an alias to hide his
+      identity and presented to the hospital with acute abdominal pain, diarrhoea and vomiting. The hospital decided to
+      admit him because of his dehydration and persistent gastrointestinal symptoms. The doctors initially diagnosed him
+      with gastroenteritis and treated him with antibiotics. Later, Clostridium difficile was detected in his stool. At
+      that point, he first raised the possibility of being poisoned and revealed his true identity.
+    </p>
+    <br>
+    <p class="article-text">
+      Within the first six days, his platelet and white blood cell levels were catastrophically low (thrombocytopenia
+      and neutropenia) and he was transferred to University College Hospital. In addition, his bone marrow samples were
+      acellular, meaning very few blood-forming (haematopoietic) cells were present, often replaced by fat. This
+      condition is known as bone marrow aplasia and is probably the cause of his low platelet and white blood cell
+      levels. Very low platelet and white blood cell levels combined with acellular bone marrow is a sign of destroyed
+      stem cells. Destroyed stem cells are often caused by radiation poisoning. After two weeks, he developed alopecia
+      (hair loss) and mucositis (inflammation of mucous membranes in the digestive tract).
+    </p>
+    <br>
+    <p class="article-text">
+      Around this time, urine samples from heavy metals screening showed a marginally elevated concentration of
+      thallium. As a result, thallium poisoning was suspected and widely reported in the media from November 19th. This
+      was later dismissed because his thallium levels were below toxic thresholds. On November 4th, he was moved to
+      intensive care due to his worsening condition. Around this time, the first suspicions of Russian involvement in
+      his poisoning appeared but the Kremlin dismissed the allegations.
+    </p>
+    <br>
+    <p class="article-text">
+      As a last resort, his blood and urine samples were sent to a nuclear research site to test for radioactive
+      substances. At first, the scientists could not identify anything indicating radiological poisoning apart from a
+      small spike at 0,803 mega electron volts (MeV). One of the scientists, who had worked on an early atomic bomb
+      programme, identified this as the typical small gamma ray signal emitted by polonium-210.
+    </p>
+    <br>
+    <p class="article-text">
+      The hospital was notified of the probable polonium-210 poisoning on November 22nd but there was little they could
+      do. On November 23rd, the result was confirmed. On the same day, Litvinenko died from cardiorespiratory arrest.
+    </p>
+  </article>
+  <div class="quiz">
+    <h2>Quiz</h2>
+    <div class="question">
+      <div>What is mucositis?</div>
+      <button class="button" id="button1" type="button" onclick="answerFunction('answer1')">See answer</button>
+      <br><br>
+      <p class="answer" id="answer1">Mucositis is inflammation of mucous membranes in the digestive tract.</p>
+    </div>
+    <div class="question">
+      <div>What symptoms did Litvinenko show when he first arrived at Barnet General Hospital?</div>
+      <button class="button" id="button2" type="button" onclick=answerFunction("answer2")>See
+        answer</button>
+      <br><br>
+      <p class="answer" id="answer2"> He had acute abdominal pain, diarrhoea, and vomiting.</p>
+    </div>
+    <div class="question">
+      <div>What did scientists at the nuclear research site detect in Litvinenko’s samples, and which radioactive
+        substance was identified?</div>
+      <button class="button" id="button3" type="button" onclick=answerFunction("answer3")>See
+        answer</button>
+      <br><br>
+      <p class="answer" id="answer3"> They found a small spike at 803 keV, which was identified as the gamma ray signal
+        of polonium-210.</p>
+    </div>
+  </div>
+  <script src="../ressources/js/main.js"></script>
+</body>
+
+</html>

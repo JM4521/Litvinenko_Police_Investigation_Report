@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>contact</title>
+  <link href='../ressources/css/style.css' rel='stylesheet'>
+  <script src="../ressources/js/main.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a href='../index.html' id='article-link' class='nav-link'>
+        <p class="nav-text">Home</p>
+      </a>
+      <a href='about.html' id='about-link' class='nav-link'>
+        <p class="nav-text">About</p>
+      </a>
+      <a href='contact.html' id='contact-link' class='nav-link'>
+        <p class="nav-text">Contact</p>
+      </a>
+    </nav>
+  </header>
+  <h1>Contact Form</h1>
+  <form action="https://formspree.io/f/xgvyeade" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email (optional):</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">Leave your message here:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <button class="button" type="submit">Submit</button>
+  </form>
+  <p></p>
+</body>
+
+</html>

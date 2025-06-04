@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Litvinenko's Murder</title>
+  <link href='../ressources/css/style.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a href='../index.html' id='article-link' class='nav-link'>
+        <p class="nav-text">Home</p>
+      </a>
+      <a href='about.html' id='about-link' class='nav-link'>
+        <p class="nav-text">About</p>
+      </a>
+      <a href='contact.html' id='contact-link' class='nav-link'>
+        <p class="nav-text">Contact</p>
+      </a>
+    </nav>
+  </header>
+  <article>
+    <h1>Litvinenko’s Murder and the Investigation That Followed</h1>
+    <div class="image-slider">
+      <div class="slides">
+        <img class="slide" src="../ressources/img/MilleniumHotel.jpg"
+          alt="Police investigating Litvinenko’s poisoning at the Millennium Hotel.">
+        <img class="slide" src="../ressources/img/Lugovoi_Kovtun.jpg"
+          alt="Dmitry Kovtun and Andrei Lugovoi, the two prime suspects">
+        <img class="slide" src="../ressources/img/pine_bar.jpg" alt="Contamination found in the Pine Bar">
+        <img class="slide" src="../ressources/img/teapot.jpg" alt="Contamination found in the teapot">
+        <img class="slide" src="../ressources/img/KovtunMillenium.jpg"
+          alt="Dmitry Kovtun arriving at the Millenium Hotel.">
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094</button>
+      <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+    <div id="image-description"></div>
+    <br>
+    <p class="article-text">
+      On the 1st of November, Litvinenko met Dmitry Kovtun and Andrei Lugovoi at the bar of a London hotel, where he
+      drank tea containing polonium. Forensic evidence from the police investigation shows that the bar was heavily
+      contaminated with polonium. The highest readings were taken at their table and inside one of the teapots.
+    </p>
+    <br>
+    <p class="article-text">
+      Later that same day, he met Mario Scaramella (an Italian KGB and FSB expert) at a sushi bar in central London and
+      received documents about the death of Anna Politkovskaya (a Russian investigative journalist). Several hours
+      later, he fell ill and spent the night vomiting.
+    </p>
+    <br>
+    <p class="article-text">
+      Following Litvinenko’s death on November 23rd, police began a murder investigation and discovered the trail of
+      polonium that had been left all across London. By following this trail, the police identified Andrei Lugovoi and
+      Dmitry Kovtun as the prime suspects. Both of them travelled between Moscow and London during the time in question,
+      left significant traces of polonium in multiple locations they visited and met multiple times with Litvinenko
+      before he died.
+    </p>
+    <br>
+    <p class="article-text">
+      Polonium-210 is a very dangerous and difficult-to-obtain substance. This raises the possibility of
+      government-level involvement. However, Lugovoi, Kovtun and the Russian government strongly deny their involvement,
+      claiming that Kovtun and Lugovoi were also victims of the incident and that the accusations are politically
+      motivated. To this day, all attempts to extradite them from Russia have failed. Dmitry Kovtun died in 2022 of
+      Covid-19, but Andrei Lugovoi is still alive and a Member of the State Duma.
+    </p>
+    <br>
+    <p class="article-text">
+      There is also some evidence indicating that there was another attempt at poisoning him during a meeting on the
+      16th of October in the boardroom of 25 Grosvenor Street (the office of Tim Reilly). The meeting was attended by
+      Lugovoi Kovtun, Litvinenko and Reilly. This attempt was unsuccessful.
+    </p>
+    <br>
+    <p>
+      The poisoning and its investigation strained the diplomatic relationship between the UK and Russia.
+    </p>
+  </article>
+  <div class="quiz">
+    <h2>Quiz</h2>
+    <div class="question">
+      <div>Where in the Pine Bar were the highest levels of polonium contamination found?</div>
+      <button class="button" id="button1" type="button" onclick="answerFunction('answer1')">See answer</button>
+      <br><br>
+      <p class="answer" id="answer1">The highest readings were taken inside the teapot and at their table.</p>
+    </div>
+    <div class="question">
+      <div>Who did Litvinenko meet at a sushi bar on the same day of his poisoning?</div>
+      <button class="button" id="button2" type="button" onclick=answerFunction("answer2")>See
+        answer</button>
+      <br><br>
+      <p class="answer" id="answer2">Mario Scaramella</p>
+    </div>
+    <div class="question">
+      <div>When might there have been a previous attempt to poison Litvinenko?</div>
+      <button class="button" id="button3" type="button" onclick=answerFunction("answer3")>See
+        answer</button>
+      <br><br>
+      <p class="answer" id="answer3">A possible prior attempt to poison Litvinenko is believed to have occurred on the
+        16th of October.</p>
+    </div>
+  </div>
+  <script src="../ressources/js/main.js"></script>
+</body>
+
+</html>
