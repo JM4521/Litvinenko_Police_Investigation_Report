@@ -18,9 +18,9 @@ function showSlide(index) {
   } else if (index < 0) {
     slideIndex = slides.length - 1;
   }
-  slides.forEach(slide => {
-    slide.classList.remove("displaySlide");
-  });
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("displaySlide");
+  }
   slides[slideIndex].classList.add("displaySlide");
   updateDescription();
 }
