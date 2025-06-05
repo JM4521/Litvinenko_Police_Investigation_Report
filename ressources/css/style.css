@@ -181,15 +181,12 @@ img.displaySlide {
 }
 
 @media screen and (max-device-width: 1024px) {
-  h1 {
-    font-size: 2.5em;
-    font-color: green;
-  }
   .link-text {
     font-size: 1.5em;
   }
-  .nav-bar {
-    font-size: 1.5em;
+  .nav-link {
+    font-size: 2em;
+    height: 100px;
   }
 }
 
