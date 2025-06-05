@@ -188,6 +188,9 @@ img.displaySlide {
     font-size: 2em;
     height: 100px;
   }
+  header {
+    height: 100px;
+  }
 }
 
 @keyframes fade {
